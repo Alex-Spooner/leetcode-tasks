@@ -21,7 +21,7 @@ public class TwoSumTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {new TwoSumSimple()}
+                {new TwoSumSimple()}, {new TwoSumFirstTry()}
         });
     }
 

@@ -1,4 +1,4 @@
-package twosum;
+package easy.twosum;
 
 public class TwoSumSimple implements SumCalculator {
 

@@ -1,4 +1,4 @@
-package romaintointeger;
+package easy.romaintointeger;
 
 import org.junit.Assert;
 import org.junit.Test;

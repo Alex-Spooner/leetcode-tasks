@@ -1,4 +1,4 @@
-package romaintointeger;
+package easy.romaintointeger;
 
 public class RomainToIntegerConverterSimple implements RomainToIntegerConverter {
     @Override

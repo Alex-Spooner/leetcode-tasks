@@ -1,4 +1,4 @@
-package palindromenumber;
+package easy.palindromenumber;
 
 import org.junit.Assert;
 import org.junit.Test;

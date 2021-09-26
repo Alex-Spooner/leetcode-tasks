@@ -1,4 +1,6 @@
-package palindromenumber;
+package easy.palindromenumber;
+
+import easy.palindromenumber.PalindromeChecker;
 
 public class PalindromeCheckerSimple implements PalindromeChecker {
     @Override

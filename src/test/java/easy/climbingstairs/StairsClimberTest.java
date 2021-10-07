@@ -12,7 +12,7 @@ public class StairsClimberTest {
     public void positiveTest() {
         assertEquals(
                 1,
-                stairsClimber.climbStairs(1)
+                stairsClimber.climbStairs(1) // 1
         );
     }
 
@@ -20,7 +20,7 @@ public class StairsClimberTest {
     public void positiveTest1() {
         assertEquals(
                 2,
-                stairsClimber.climbStairs(2)
+                stairsClimber.climbStairs(2) // 11, 2
         );
     }
 
@@ -28,7 +28,7 @@ public class StairsClimberTest {
     public void positiveTest2() {
         assertEquals(
                 3,
-                stairsClimber.climbStairs(3)
+                stairsClimber.climbStairs(3) // 111, 21, 12
         );
     }
 

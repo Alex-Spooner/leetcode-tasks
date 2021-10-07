@@ -20,7 +20,7 @@ public class ParenthesesValidatorTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {new ParenthesesValidatorSimple()}
+                {new ParenthesesValidatorSimple()}, {new ParenthesesValidatorWithStack()}
         });
     }
 
@@ -52,5 +52,10 @@ public class ParenthesesValidatorTest {
     @Test
     public void negativeTest3() {
         Assert.assertFalse(parenthesesValidator.isValid("([(()]))"));
+    }
+
+    @Test
+    public void negativeTest4() {
+        Assert.assertFalse(parenthesesValidator.isValid("]"));
     }
 }

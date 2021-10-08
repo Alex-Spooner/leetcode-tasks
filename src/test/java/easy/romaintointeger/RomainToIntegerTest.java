@@ -20,7 +20,7 @@ public class RomainToIntegerTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {new RomainToIntegerConverterSimple()}
+                {new RomainToIntegerConverterSimple()}, {new RomainToIntegerConverterWithMap()}
         });
     }
 

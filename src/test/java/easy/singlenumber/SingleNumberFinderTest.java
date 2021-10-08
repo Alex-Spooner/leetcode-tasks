@@ -1,12 +1,29 @@
 package easy.singlenumber;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
 
+@RunWith(Parameterized.class)
 public class SingleNumberFinderTest {
 
-    SingleNumberFinder singleNumberFinder = new SingleNumberFinderSimple();
+    private final SingleNumberFinder singleNumberFinder;
+
+    public SingleNumberFinderTest(SingleNumberFinder singleNumberFinder) {
+        this.singleNumberFinder = singleNumberFinder;
+    }
+
+    @Parameterized.Parameters
+    public static Collection<Object[]> data() {
+        return Arrays.asList(new Object[][]{
+                {new SingleNumberFinderSimple()}, {new SingleNumberFinderXor()}
+        });
+    }
 
     @Test
     public void positiveTest() {

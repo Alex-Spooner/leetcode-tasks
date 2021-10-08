@@ -1,4 +1,4 @@
-package easy.reverseinteger;
+package medium.reverseinteger;
 
 public class ReverseIntegerSimple implements IntegerReverser {
     @Override

@@ -1,4 +1,4 @@
-package easy.reverseinteger;
+package medium.reverseinteger;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -19,7 +19,7 @@ public class DuplicateRemoverTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {new DuplicateRemoverSimple()}
+                {new DuplicateRemoverSimple()}, {new DuplicateRemoverWithoutCopy()}
         });
     }
 
@@ -51,6 +51,17 @@ public class DuplicateRemoverTest {
         int resultIntNumber = duplicateRemover.removeDuplicates(ints);
         Assert.assertEquals(
                 5,
+                resultIntNumber
+        );
+        assertResultInts(ints, resultIntNumber, new int[]{0, 1, 2, 3, 4});
+    }
+
+    @Test
+    public void positiveTest4() {
+        int[] ints = {};
+        int resultIntNumber = duplicateRemover.removeDuplicates(ints);
+        Assert.assertEquals(
+                0,
                 resultIntNumber
         );
         assertResultInts(ints, resultIntNumber, new int[]{0, 1, 2, 3, 4});

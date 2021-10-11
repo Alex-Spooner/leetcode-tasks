@@ -20,7 +20,7 @@ public class SortedListMergerTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {new SortedListMergerSimple()}
+                {new SortedListMergerSimple()}, {new SortedListMergerWithDummy()}
         });
     }
 

@@ -1,5 +1,7 @@
 package easy.plusone;
 
+import java.util.Arrays;
+
 public class PlusOneIncrementerSimple implements PlusOneIncrementer {
     @Override
     public int[] plusOne(int[] digits) {
@@ -14,8 +16,8 @@ public class PlusOneIncrementerSimple implements PlusOneIncrementer {
 
         if (digits[0] == 0) {
             int[] result = new int[digits.length + 1];
+            Arrays.fill(result, 0);
             result[0] = 1;
-            System.arraycopy(digits, 0, result, 1, digits.length);
             return result;
         } else {
             return digits;

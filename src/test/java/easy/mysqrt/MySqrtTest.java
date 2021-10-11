@@ -1,12 +1,29 @@
 package easy.mysqrt;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
 
+@RunWith(Parameterized.class)
 public class MySqrtTest {
 
-    MySqrt mySqrt = new MySqrtImpl();
+    private final MySqrt mySqrt;
+
+    public MySqrtTest(MySqrt mySqrt) {
+        this.mySqrt = mySqrt;
+    }
+
+    @Parameterized.Parameters
+    public static Collection<Object[]> data() {
+        return Arrays.asList(new Object[][]{
+                {new MySqrtImpl()}, {new MySqrtNewton()}
+        });
+    }
 
     @Test
     public void positiveTest(){
@@ -29,6 +46,14 @@ public class MySqrtTest {
         assertEquals(
                 46340,
                 mySqrt.mySqrt(2147395600)
+        );
+    }
+
+    @Test
+    public void positiveTest4(){
+        assertEquals(
+                1,
+                mySqrt.mySqrt(3)
         );
     }
 

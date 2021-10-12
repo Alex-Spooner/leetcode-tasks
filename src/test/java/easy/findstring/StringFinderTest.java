@@ -20,7 +20,7 @@ public class StringFinderTest {
     @Parameterized.Parameters
     public static Collection<Object> data() {
         return Arrays.asList(new Object[][]{
-                {new StringFinderSimple()}
+                {new StringFinderSimple()}, {new StringFinderWithSubstring()}
         });
     }
 

@@ -1,5 +1,7 @@
 package medium.addtwonumbers;
 
+import model.ListNode;
+
 public class NumbersAdderImpl implements NumbersAdder {
     @Override
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -35,6 +37,7 @@ public class NumbersAdderImpl implements NumbersAdder {
         if (needToAddOne) {
             resultCurrentNode.next = new ListNode(1);
         }
+
         return result;
     }
 

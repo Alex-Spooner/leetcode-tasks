@@ -1,5 +1,7 @@
 package easy.binarytreetraversal;
 
+import model.TreeNode;
+
 import java.util.List;
 
 public interface BinaryTreeTraversal {

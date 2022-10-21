@@ -1,5 +1,7 @@
 package easy.mergesortedlist;
 
+import model.ListNode;
+
 public class SortedListMergerWithDummy implements SortedListMerger {
     @Override
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {

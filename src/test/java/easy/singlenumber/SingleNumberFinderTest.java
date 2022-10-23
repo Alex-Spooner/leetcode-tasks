@@ -49,4 +49,13 @@ public class SingleNumberFinderTest {
         );
     }
 
+    @Test
+    public void xorExperiments() {
+        int notUniqueInt = 123;
+        int uniqueInt = 321;
+        assertEquals(
+                uniqueInt,
+                notUniqueInt ^ notUniqueInt ^ uniqueInt
+        );
+    }
 }

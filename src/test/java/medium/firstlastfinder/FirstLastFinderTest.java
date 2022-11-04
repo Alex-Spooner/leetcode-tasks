@@ -2,10 +2,10 @@ package medium.firstlastfinder;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static utils.ArrayUtils.convertArrayToList;
 
 public class FirstLastFinderTest {
 
@@ -81,13 +81,5 @@ public class FirstLastFinderTest {
         List<Integer> actualList = convertArrayToList(actualResult);
         assertTrue(expectedList.containsAll(actualList));
         assertTrue(actualList.containsAll(expectedList));
-    }
-
-    private List<Integer> convertArrayToList(int[] array){
-        List<Integer> result = new ArrayList<>();
-        for (int integer : array) {
-            result.add(integer);
-        }
-        return result;
     }
 }

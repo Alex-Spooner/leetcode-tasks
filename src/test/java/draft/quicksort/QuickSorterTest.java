@@ -16,7 +16,7 @@ public class QuickSorterTest {
      int[] actualArray = {5, 9, 4, 6, 5, 3};
      int[] expectedResult = {3, 4, 5, 5, 6, 9};
         List<Integer> expectedList = convertArrayToList(expectedResult);
-        quickSorter.quickSort(actualArray);
+        quickSorter.sort(actualArray);
         List<Integer> actualList = convertArrayToList(actualArray);
         assertTrue(expectedList.containsAll(actualList));
         assertTrue(actualList.containsAll(expectedList));

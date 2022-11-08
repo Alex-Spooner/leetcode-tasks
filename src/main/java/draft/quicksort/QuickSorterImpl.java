@@ -2,7 +2,7 @@ package draft.quicksort;
 
 public class QuickSorterImpl implements QuickSorter {
     @Override
-    public void quickSort(int[] arr) {
+    public void sort(int[] arr) {
         quickSort(arr, 0, (arr.length - 1));
     }
 

@@ -1,4 +1,4 @@
-package draft.submarinecounter;
+package draft.some.submarinecounter;
 
 import lombok.Data;
 

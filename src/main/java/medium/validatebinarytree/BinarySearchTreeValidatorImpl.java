@@ -11,11 +11,13 @@ public class BinarySearchTreeValidatorImpl implements BinarySearchTreeValidator 
         if (root == null) {
             return false;
         }
+
         checkNode(
                 root,
                 null,
                 null
         );
+
         return result;
     }
 
